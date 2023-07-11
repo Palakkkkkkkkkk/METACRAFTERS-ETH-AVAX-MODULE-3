@@ -2,7 +2,7 @@
 
 # Introduction
 This repository contains the Solidity smart contract code for the ERC-20 token, designed with basic functionalities such as minting, burning, and transferring the tokens.
-This README file provides an overview of the ERC-20 token contract that includes instructions on how to deploy the contract to the local Hardhat test network using Remix Connect Localhost and how to interact with it using Remix in the Hardhat provider network.
+This README file provides an overview of the ERC-20 token contract that includes instructions on how to deploy the contract to the local Hardhat test network using Remix Connect Localhost and how to interact with it using Remix in the Hardhat provider environment.
 
 # Implementation
 1. Clone the repository and install its dependencies:
@@ -38,36 +38,23 @@ npx hardhat node
 12. Wait for the deployment transaction to be confirmed on the local Hardhat network.
 13.  Once the contract is deployed, you will see the contract address in the Remix console.
 
- # Interacting with the Contract using Remix with Hardhat Provider
+ # Interacting with the Contract using Remix in the Hardhat Provider Environment
 
-After deploying the RUK token contract to the local Hardhat test network, you can interact with the contract using Remix with Hardhat provider. Here are the steps to get started:
+After deploying the token contract to the local Hardhat test network, you can interact with the contract using Remix with the Hardhat provider. Here are the steps to get started:
 
 1. Open the [Remix](https://remix.ethereum.org/) online IDE in your browser.
-
-2. In the "File Explorer" section, locate the `Token.sol` file and open it.
-
-3. In the "Deployed Contracts" section, click on the contract named `Token`.
-
+2. In the "File Explorer" section, locate the `Lock.sol` file and open it.
+3. In the "Deployed Contracts" section, click on the contract named `Lock`.
 4. In the "At Address" input field, enter the contract address obtained during deployment.
-
 5. Click the "At Address" button to load the contract instance.
+6. You can now interact with the ERC20 token contract through the provided functions.
 
-6. You can now interact with the RUK token contract through the provided functions.
-
-   - Use the `balanceOf` function to check the token balance of a specific address.
-   - Use the `transfer` function to send RUK tokens from your address to another address.
-   - Use the `mint` function (accessible only to the contract owner) to mint
-
- new RUK tokens.
-   - Use the `burn` function to burn a specific amount of your RUK tokens.
+   - Use the `mint` function to create the new tokens.
+   - Use the `burn` function to destroy a certain amount of tokens.
+   - Use the `transfer` function to transfer the tokens to another address.
 
 7. Set the required parameters for each function and click the corresponding button to execute the transaction.
-
-8. Confirm the transaction details and sign the transaction in Remix.
-
-9. Wait for the transaction to be confirmed on the local Hardhat network.
-
-10. You can view the transaction status and emitted events in the Remix console.
+8.  You can view the transaction status and emitted events in the Remix console.
 
 ## Author
 PALAK JAIN :)
